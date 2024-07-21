@@ -4,7 +4,7 @@
 This project is a front-end web application modeled after Meesho, utilizing React.js to deliver an engaging and user-friendly shopping experience. The app enables users to explore products, manage their shopping cart, and handle authentication with ease. By incorporating contemporary design principles and strong state management, the project ensures a seamless and responsive user interface.
 
 ## Deployment
-The application is deployed on vercel and can be accessed at: (https://meesho-web-app.vercel.app)
+The application is deployed on vercel and can be accessed at: 
 
 ## Screenshots
 
