@@ -1,5 +1,5 @@
 // //This is a Navigation bar of meesho webapp which has meesho logo, Search Bar , Download app, Profile, and AddTOCart  
-
+// import { useEffect } from 'react';
 import React, { useState } from 'react'
 import messhoLogo from '../assets/meeshoLogo.svg'
 import { CiSearch } from "react-icons/ci";
@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 
+
 function Navbar() {
   const products = useSelector((state) => state.meeshoReducer.products);
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,10 @@ function Navbar() {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+// useEffect (()=>{
+//   console.log(productsData)
+// },[])
 
   const [toggle, setToggle] = useState(false)
 const toggleButtton = () =>{
@@ -74,7 +79,7 @@ const handleSearch = (e) => {  //Search Handle
               <ul>
                 {filteredProducts.map((item) => (
                   <li key={item.id} className="p-2 hover:bg-gray-200">
-                    <Link to={`/api/product/${item._id}`}>
+                    <Link to={`/product/${item.id}`}>
                       {item.title}
                     </Link>
                   </li>

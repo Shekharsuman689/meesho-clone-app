@@ -1,6 +1,6 @@
 //This is a Search Product Page Shows the Search Product Details 
 
-import React from 'react'
+// import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import StarIcon from '@mui/icons-material/Star';
 import { useLoaderData, useParams } from 'react-router-dom';
@@ -11,12 +11,14 @@ function SearchProducts() {
   const data = useLoaderData(); //Fetching Product Data
   const productsData = data.data
   const dispatch = useDispatch();
-  
-  const product = productsData.find(product => product.id===id )
+// console.log(product)
+  const product = productsData.find(product => product.id == id )
   if (!product) {  //Meesage if product not found
     return <div>Product not found{id}</div>;
   }
-
+// useEffect(()=>{
+//   console.log(productsData)
+// })
   return (
     <div>
       <div className='mx-auto m-auto bg-gray-100 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-4 px-4 mt-3 item-center justify-center'>
