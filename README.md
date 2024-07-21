@@ -9,12 +9,20 @@ The application is deployed on vercel and can be accessed at: https://meesho-clo
 ## Screenshots
 1. Home Page
    ![home](https://github.com/user-attachments/assets/1e5865b9-020b-4418-bbe4-56cbc4f14872)
+
+   
 2. All Products
    ![product](https://github.com/user-attachments/assets/02deda0c-bace-45c6-aec5-fa200c705c19)
+
+   
 3. Login Page
    ![Login](https://github.com/user-attachments/assets/60b3ef5f-7e3f-43a5-b737-ec05fb28cb22)
+
+   
 4. Sign Up
    ![Signup](https://github.com/user-attachments/assets/1e26934b-db8f-4d56-b0c3-db2a82041f94)
+
+
 5. Cart
    ![cart](https://github.com/user-attachments/assets/679519b0-31bc-4b64-a7ad-337b3335e666)
 ## Technologies used
